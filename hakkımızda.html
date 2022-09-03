@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clemita Coffee</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/png" href="anasayfa/cafe.png" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Ramaraja&family=Roboto:wght@100;300;400;500&display=swap");
+      .navbar-brand {
+        font-size: 30px;
+        font-family: "Ramaraja", serif;
+      }
+      .ustyazi {
+        background-color: #005e5c;
+        margin-top: 80px;
+        color: white;
+        font-size: 50px;
+        height: 130px;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .hero-image-1 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("hakkımızda/hakkımızda1.jpg");
+        height: 75%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .hero-text {
+        text-align: right;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        color: white;
+        padding-right: 10px;
+      }
+      .hero-image-2 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("hakkımızda/hakkımızda2.jpg");
+        height: 75%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .hero-text-1 {
+        text-align: right;
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+        color: white;
+        padding-right: 0px;
+      }
+      .degerler {
+        background-color: #005e5c;
+        color: white;
+        font-size: 45px;
+        height: 100px;
+        text-align: center;
+      }
+      .etik {
+        background-color: #6c0c33;
+        color: white;
+        font-size: 45px;
+        height: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">CLEMİTA COFFEE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              CLEMİTA COFFEE
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="hakkımızda.html"
+                  >Hakkımızda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="uyeol.html">Üye Ol</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="girisyap.html">Giriş Yap</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="urunler.html"
+                  id="offcanvasNavbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ürünlerimiz
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="offcanvasNavbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="kahveler.html">Kahveler</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="çikolata.html">Çikolata</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="aksesuar.html">Aksesuar</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    ></div>
+
+    <div class="w-auto p-3 ustyazi">HAKKIMIZDA</div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <p></p>
+          <h2>Hepimizin Ortak Noktası</h2>
+          <p>
+            Kahveden çikolataya, unlu mamülden dondurmaya bini aşan ürün
+            çeşidimiz ve makul fiyatlarımızla herkesin ulaşabildiği 'Hepimizin
+            Ortak Noktası'
+          </p>
+        </div>
+        <br /><br />
+        <div class="col-6">
+          <p></p>
+          <p>
+            2004 yılında İstanbul’un Eminönü semtinde açtığımız ilk mağazamızla
+            yakaladığımız büyüme ivmesini, her geçen gün daha da artırarak
+            Türkiye’nin 34’ten fazla şehrine ulaştık. 2011 yılında Londra,
+            Piccadilly Circus’ta açtığımız ilk yurt dışı mağazamıza gördüğümüz
+            ilgiye karşılık olarak, ülke dışındaki girişimlerimize de hız
+            verdik. Bugün yerli ve yabancı tüm tüketicilerimizin beğeni ve
+            taleplerinden aldığımız güçle Türkiye, İngiltere, Romanya, Kuveyt ve
+            Suudi Arabistan’da yer alan 200’den fazla mağaza ile toplam 450’den
+            fazla noktada müşterilerimizle buluşuyoruz.
+          </p>
+          <p>
+            Tüm mağazalarımızın işletmesini kendimiz üstlenerek kalitemizi
+            garanti altına alıyoruz. Türkiye’de bir benzeri olmayan kahve
+            mağazacılığı anlayışıyla, sattığımız ve servis ettiğimiz tüm kahve,
+            çikolata, dondurma ve unlu mamul çeşitlerinde kendi üretimimiz
+            olmayan hiçbir ürünü müşterilerimize sunmuyoruz.
+          </p>
+          <p>
+            Kaliteli ve lezzetli ürün yelpazemiz ve kusursuz servisimizle, Türk
+            kahvesi ve diğer özgün lezzetimizi, Türk ikram geleneği ve
+            konukseverliğini sergileyerek dünyaya tanıtmaya devam ediyoruz.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="hero-image-1">
+      <div class="hero-text col-6">
+        <br /><br /><br /><br /><br />
+        <h1 style="font-size: 50px; text-align: left">Vizyon</h1>
+
+        <p style="text-align: left">
+          Kaliteli, yenilikçi ve farklı ürünler yaratan, Türk kahve ve ikram
+          kültürünü, Türkiye’nin yanı sıra tüm dünyada tüketicilerle buluşturup,
+          müşterilerin kendilerini iyi hissedeceği ve keyifle tüketeceği
+          ortamlarda sunarak, sektöründe en beğenilen ve tercih edilen marka
+          olmak.
+        </p>
+        <h1 style="font-size: 50px; text-align: left">Misyon</h1>
+        <p style="text-align: left">
+          Doğru kalite-fiyat oranını sağlayarak, geniş ürün yelpazesiyle
+          tüketici beklentilerini en üst düzeyde karşılamak.
+        </p>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="text-align: center">
+          <h3><b>HİKAYEMİZ</b></h3>
+          <h1 style="font-weight: bolder">
+            Clemita, bünyesinde 7 şirket bulunan Altınmarka Grubu’nun bir
+            üyesidir.
+          </h1>
+          <p>
+            Clemita olarak, 2004 yılında İstanbul’un Eminönü semtinde açtığımız
+            ilk mağazamızdan itibaren, müşteri odaklı yaklaşımımız, Türk
+            misafirperverliğini yansıtan güler yüzlü karşılamamız, masaya servis
+            anlayışımız ve ikram kültürümüzle, kısa sürede önerilen bir markaya
+            dönüşerek, kulaktan kulağa yayıldık.
+          </p>
+          <p>
+            İlk günümüzden bugüne her zaman samimi, güler yüzlü ve ikram sunmayı
+            seven bir marka olduk. Geniş ürün yelpazemizle herkese hitap
+            ediyoruz, herkesin beğeni ve sevgisini kazanıyoruz. Ürünlerimizi
+            kendimiz üretiyor, kalite ve lezzet garantisi veriyoruz. Kahveden
+            çikolataya, unlu mamulden dondurmaya, bini aşkın ürün çeşidimiz ve
+            makul fiyat politikamızla, herkesin ulaşabildiği bir marka,
+            Hepimizin Ortak Noktası olarak yolumuza devam ediyoruz.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="hero-image-2">
+      <div class="hero-text-1 col-12">
+        <p style="font-size: 40px; font-weight: bold">
+          Kurulduğumuz günden bugüne hep sosyal sorumluluk bilinci ile çalıştık.
+        </p>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="text-align: center">
+          <h6>
+            Clemita Shopping olarak kurulduğumuz günden itibaren sosyal
+            sorumluluk projelerinde yer almaya
+          </h6>
+          <h6>
+            büyük önem verdik. 2004 yılından bu yana onlarca projeye destek,
+            sayısız insana umut olmak için
+          </h6>
+          <h6>gururla çalıştık.</h6>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <img src="hakkımızda/açev.png" alt="" />
+          <h5 style="font-weight: bolder">AÇEV Sosyal Sorumluluk Projesi</h5>
+          <p>
+            AÇEV’li çocukların çizimlerine yer verdiğimiz bu çikolata kutularını
+            alarak sevdiklerinize anlamlı bir hediye gönderebilir, bu değerli
+            sosyal sorumluluk projesinin bir parçası olup Anne Çocuk Eğitim
+            Vakfı’na katkıda bulunabilirsiniz.
+          </p>
+          <p style="opacity: 0.3; text-align: center">2011 yılından bu yana</p>
+        </div>
+
+        <br />
+        <div class="col-4">
+          <img src="hakkımızda/kaçuv.png" alt="" />
+          <h5 style="font-weight: bolder">KAÇUV Sorumluluk Projesi</h5>
+          <p>
+            KAÇUV ile ortak projemizde, çikolata kutularımızın üzerinde KAÇUV’lu
+            çocukların hayallerini yansıttığı resimlerine yer verdik. Siz de bu
+            kutuları alarak sevdiklerinize anlamlı bir hediye gönderebilir, bu
+            değerli sosyal sorumluluk projesinin bir parçası olup Kanserli
+            Çocuklara Umut Vakfı’na katkıda bulunabilirsiniz.
+          </p>
+          <p style="opacity: 0.3; text-align: center">2011 yılından bu yana</p>
+        </div>
+        <br />
+        <div class="col-4">
+          <img src="hakkımızda/ss-tofd.jpg" alt="" />
+          <h5 style="font-weight: bolder">
+            Türkiye Omurilik Felçlileri Derneği Sosyal Sorumluluk Projesi
+          </h5>
+          <p>
+            Plastik kapak kampanyası dâhilinde topladığımız kapaklarla, ihtiyaç
+            sahiplerine tekerlekli sandalye ulaştırılmasına yardımcı oluyoruz.
+          </p>
+          <p style="opacity: 0.3; text-align: center">2011 yılından bu yana</p>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <img src="hakkımızda/ss-tscv.jpg" alt="" />
+          <h5 style="font-weight: bolder">
+            Türkiye Spastik Çocuklar Vakfı Sosyal Sorumluluk Projesi
+          </h5>
+          <p>
+            Projeye özel üretilen çikolata kutularını satarak, Türkiye Spastik
+            Çocuklar Vakfı’na kaynak sağlamaya devam ediyoruz.
+          </p>
+          <p style="opacity: 0.3; text-align: center">2019 yılından bu yana</p>
+        </div>
+        <br />
+        <div class="col-4">
+          <img src="hakkımızda/ss.jpg" alt="" />
+          <h5 style="font-weight: bolder">
+            Darüşşafaka Cemiyeti Sosyal Sorumluluk Projesi
+          </h5>
+          <p>
+            Darüşşafaka öğrencilerinin eğitimlerine her yıl daha fazla katkıda
+            bulunmak için çalışmalarımızı sürdürüyoruz
+          </p>
+          <p style="opacity: 0.3; text-align: center">2019 yılından bu yana</p>
+        </div>
+        <br />
+        <div class="col-4">
+          <img src="hakkımızda/tema.png" alt="" />
+          <h5 style="font-weight: bolder">TEMA Sosyal Sorumluluk Projesi</h5>
+          <p>
+            TEMA Vakfı ile birlikte yürüttüğümüz “Her Çocuk Bir Fidan”
+            projesiyle çocukların doğa eğitimine katkıda bulunuyoruz. Kahve
+            Dünyası Hatıra Ormanı'nı oluşturmak ve gelecek nesillere aktarmak
+            için "Yeşil Termos" projemizi hayata geçirdik.
+          </p>
+          <p style="opacity: 0.3; text-align: center">2019 yılından bu yana</p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="w-100 p-3 degerler">CLEMİTA'NIN İNANDIĞI DEĞERLER</div>
+    <br /><br /><br /><br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Doğallık</h4>
+          <ul>
+            <li>
+              Ürünlerimizde doğallıktan ve kaliteden asla ödün vermeyiz.
+              Misyonumuz, müşterilerimizi eşsiz lezzetlerle buluşturmak ve
+              çatımız altında güzel ve anlamlı deneyimler yaşamalarını
+              sağlamaktır.
+            </li>
+            <li>
+              Üretim süreçlerimizde gizlimiz saklımiz yoktur. Tercihimiz,
+              üretimde de doğallıktır. Doğallığımizı müşterilerimiz de bilsin
+              isteriz ve onları bu konuda bilgilendirmekten mutluluk duyarız.
+            </li>
+            <li>
+              Geleneksel türk misafirperverliğinin daimi temsilcisi olarak
+              kapımızdan içeri adım atan herkesi misafirimiz olarak görürüz ve
+              ikramda bulunuruz.
+            </li>
+            <li>
+              İçten gelen samimi bir gülümsemenin, misafirlerimizi karşilamanın
+              ilk adımı olduğunu biliriz. Güler yüzümüzü kimseden sakınmaz,
+              herkesle paylaşırız.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Tutku</h4>
+          <ul>
+            <li>
+              Tüm lezzetlerimize tutku katar, onlara tutkuyla bağlanırız. Her
+              bir ürünün içinde emek, özen, heyecan ve ustalık olduğunu
+              aklımızdan çıkarmayız.
+            </li>
+            <li>
+              “Hepimizin Ortak Noktası” olma hedefimizi gerçekleştirmek için,
+              bireysel yeteneklerimizi kullanırken bile, yan yana çalışıyormuş
+              gibi, her an güçlü bir ekip ruhuyla hareket ederiz
+            </li>
+            <li>
+              Anlama ve dinleme hevesimizi asla kaybetmeyiz. Müşterilerimizi can
+              kulağıyla dinleriz. İhtiyaç ve taleplerini doğru anlayıp,
+              beklentilerinin de ötesini sunmaya gayret ederiz.
+            </li>
+            <li>
+              Pozitif enerjinin bulaşıcı olduğuna, hem kişiden kişiye hem de
+              ortama yayıldığına inanırız. Müşterilerimize her zaman pozitif
+              enerjiyle yaklaşır,tutkuyla hizmet veririz.s
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Çalışkanlık</h4>
+          <ul>
+            <li>
+              En yoğun tempoda bile, dinamik bir ekip çalışması sergileriz.
+              Birbirimizle uyum içinde çalışarak müşteri memnuniyetini ön planda
+              tutarız.
+            </li>
+            <li>
+              Zevkle çalışırken daha iyisini yaratabilmek için, sıkı ve titiz
+              çalışmaya, kendimizi sürekli geliştirmeye inanırız. Merakımızı ve
+              öğrenme isteğimizi her zaman canlı tutariz.
+            </li>
+            <li>
+              Özgün iş yapiş biçimimizle rakiplerimizden farklılaşırız. Eşi
+              benzeri olmayan ürünler sunmak için özen gösteririz.
+            </li>
+            <li>
+              Birbirimizin başarılarından güç, ilham ve keyif alırız. Daha büyük
+              başarılara ulaşmak için birlikte özveriyle çalışirız.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Çözüm Odaklılık</h4>
+          <ul>
+            <li>
+              Müşterilerimizin mağazalarımızdan güler yüzle ayrılması, İşimizi
+              doğru yaptığımızın göstergesidir. Süreçlerimizin yönetimi ve
+              değerlendirilmesinde bu kriteri dikkate alırız.
+            </li>
+            <li>
+              Tüm kararlarımızda müşterilerimizi ön planda tutarız. Bu ana ilke,
+              kararlarımızın tutarlı ve etkili olmasını sağlar.
+            </li>
+            <li>
+              İletişimde kolay anlaşılan ve güven veren bir dil kullanıriz. Her
+              türlü konuyu gecikmeden çözmeye çalışırız.
+            </li>
+            <li>
+              İlişkilerimizde iyi niyet gösterir, sevgi-saygı çerçevesinde
+              iletişim kurmaktan ve empati yapmaktan vazgeçmeyiz.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Yenilikçilik</h4>
+          <ul>
+            <li>
+              Yenilikçi ürünler, yaratıcı mağaza konseptleri ve hayatı
+              kolaylaştıran teknolojiler ile misafirlerimize kişiselleştirilmiş
+              deneyimler yaşatırken, sektöre öncülük ederiz.
+            </li>
+            <li>
+              Dünyadaki değişimi yakından izleyerek, tüketim alışkanlıklarına
+              yön verecek, trende dönüşecek fikirler geliştiririz.
+              Dijitalleşmeyi iş süreçlerimize entegre ederek pozitif dönüşümün
+              sürekliliğini sağlarız.
+            </li>
+            <li>
+              Her yaşa, zevke ve damak tadına hitap etmek için cesur adımlar
+              atar, ürün gamımızı sürekli geliştirip çeşitlendiririz.
+            </li>
+            <li>
+              Kahve mağazacılığında yalnızca kendi ürettiği lezzetlerin satışını
+              gerçekleştiren ilk ve tek marka olarak, tüm mağazalarımızın
+              işletmesini kendimiz üstleniriz.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="w-100 p-3 etik">ETİK KURALLAR</div>
+    <br /><br /><br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Amaç</h4>
+          <p>
+            Şirket itibarının korunması ve marka değerinin korunarak
+            yükseltilmesi amacıyla oluşturulan Etik Kuralları, şirketimizin
+            taraf olduğu tüm paydaşlar ile ilişkilerimizi düzenlemek ve onlara
+            karşı olan davranış standardımızı belirlemek amacıyla
+            hazırlanmıştır.
+          </p>
+          <p>
+            Burada belirtilen kurallar, yaşanabilecek tüm durumları
+            içermemektedir. Bu prosedürde bahsedilen kurallar bir rehber
+            niteliğinde olup tüm çalışanlarımızın davranışları için bir çerçeve
+            belirtmektedir.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Kapsam</h4>
+          <p>
+            Tüm çalışanlarımız, bu dokümanda belirtilen kurallara uymakla
+            yükümlüdürler.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Sorumluluklar</h4>
+          <p>
+            Çalışanlarımız işlerini gerçekleştirirken aldıkları kararlar ve
+            sergiledikleri davranışlar ile kurum imajını etkilemektedirler ve 3.
+            şahıslar gözünde şirketimizi temsil etmektedirler. Bu noktadan
+            hareketle, şirketimizin itibarının korunması konusunda tüm
+            çalışanlarımızın sorumluluğu bulunmaktadır.
+          </p>
+          <p>
+            Davranışların kurallara uygun olup olmadığı ile ilgili çalışanın bir
+            tereddüdü oluştuğunda önce bir üst amire, gerekli durumlarda ise
+            Etik Komitesi’ne bilgi verme sorumluluğu bulunmaktadır.
+          </p>
+          <p>
+            Etik Kurallar’a uyumda bir ihlal söz konusu olduğunda gereken
+            önlemler alınacak, Etik Komitesi’nin ön değerlendirmesi sonrasında
+            durum gizlilik prensibi gözetilerek konu ilgili birimlere ve
+            sonrasında gerektiğinde Disiplin Komitesi’ne aktarılacaktır.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Etik Kurallara Uyum</h4>
+          <ul>
+            <li>
+              İnsan haklarına saygı gösterir, bu konudaki tüm ulusal ve
+              uluslararası yasalara uygun hareket ederiz
+            </li>
+            <li>Şirketimizin etik kurallarına uygun olarak hareket ederiz.</li>
+            <li>
+              Şirketimizin performansı, saygınlığı ve itibarında sorumluluğumuz
+              olduğunu bilerek davranırız.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Yasalara Uyum</h4>
+          <ul>
+            <li>
+              Şirket işleyiş ve prosedürlerimizin ulusal ve uluslararası
+              yasalara uygun olmasını sağlarız; tüm çalışanlarımızın da yasalara
+              uygun şekilde hareket etmesini bekleriz.
+            </li>
+            <li>
+              Tüm çalışanlarımızın, görevleri gereği tabi oldukları yasa ve
+              yönetmelikleri takip etmesini, işlerini bu yasa ve yönetmelikler
+              çerçevesinde yürütmesini bekleriz.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Çalışanlarımız ile İlişkiler</h4>
+
+          <ul>
+            <li>
+              Tüm çalışanlarımız için sağlıklı ve güvenli şekilde
+              çalışabilecekleri koşulları ve ortamı sağlarız.
+            </li>
+            <li>
+              Çalışanlarımız arasında din, dil, ırk, cinsiyet ayrımcılığı
+              yapmayız. Tüm çalışanlarımıza fırsat eşitliği sağlarız.
+            </li>
+            <li>
+              İşe alım sürecinden itibaren tüm çalışanlarımıza adil yaklaşır,
+              işin gerektirdiği niteliklere uygunluk ilkesi çerçevesinde hareket
+              ederiz.
+            </li>
+            <li>
+              Çalışanlarımızın niteliklerinin ve yetkinliklerinin artırılması
+              için onlarla birlikte hareket eder, onlara destek oluruz.
+            </li>
+            <li>
+              Çalışanlarımızın kişisel bilgilerinin gizliliğine saygı gösterir,
+              bu konudaki tüm yasalara uygun davranırız.
+            </li>
+            <li>
+              Hiçbir şekilde 18 yaşını doldurmamış çocuk ve genç işçi
+              çalıştırmayız.
+            </li>
+            <li>
+              Tüm çalışanlarımızın birbirine saygılı davranmasını bekler;
+              işyerinde herhangi bir şekilde taciz, rahatsız etme, tartışma,
+              tehdit, hakaret, hırsızlık, suistimal, görevi kötüye kullanma,
+              haksız menfaat sağlama, iş uyumunu bozma gibi davranışları kabul
+              etmeyiz.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 style="font-weight: bold">Müşterimiz ile İlişkiler</h4>
+          <ul>
+            <li>
+              Tüm iletişimlerimizde müşteri memnuniyeti ilkesi ile hareket
+              ederiz.
+            </li>
+            <li>
+              Müşterilerimize karşı her zaman dürüst davranırız, uzun vadeli
+              güven ortamını bozacak her türlü davranıştan kaçınırız.
+            </li>
+            <li>
+              Müşterilerimizin haklarını korur; onların talep, itiraz ve
+              beklentilerini dikkate alırız.
+            </li>
+            <li>
+              Müşterilerimize her zaman en kaliteli ürünleri, en iyi hizmet
+              standartları ile sunarız.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="d1 col-12">
+      <p class="p1">
+        <b>YARDIM</b><br /><br />
+        Üyelik<br />
+        Sipariş İşlemleri<br />
+        Ödeme İşlemleri<br />
+        Teslimat Süreci<br />
+        İade İşlemleri<br />
+        Ürün Gamı<br />
+        Teknik Konular<br />
+        İletişim<br />
+        İletişim Formu<br />
+        Bilgi Toplumu Hizmetleri <br />
+        <i
+          class="fa fa-twitter fa-2x"
+          style="
+            padding-top: 20px;
+            cursor: pointer;
+            padding-left: 0px;
+            margin-left: 0px;
+          "
+        ></i>
+        <i
+          class="fa fa-youtube fa-2x"
+          style="padding-top: 20px; cursor: pointer"
+        ></i>
+        <i
+          class="fa fa-instagram fa-2x"
+          style="padding-top: 20px; cursor: pointer"
+        ></i>
+      </p>
+      <p class="p2">
+        <b>HAKKIMIZDA</b><br /><br />
+        Tarihçe<br />
+        Şirketimiz<br />
+        Bizden Haberler
+      </p>
+      <p class="p3">
+        <b>KAHVE</b><br /><br />
+        Türk Kahvesi<br />
+        Filtre Kahve<br />
+        Yöresel Kahve<br />
+        Espresso<br />
+        Hazır Kahveler<br />
+        Salep ve Sıcak Çikolata Şuruplar
+      </p>
+      <p class="p4">
+        <b>KAMPANYALAR HAKKIMIZDA</b><br /><br />
+        Hikayemiz<br />
+        Üretim<br />Kurumsal Çözümler<br />
+        Kariyer<br />
+        Atölye Tüm Mağazalar<br />
+        Blog<br />
+        Etik Kurallarımız<br />
+        Değerlerimiz<br />
+        Sertifikalarım
+      </p>
+    </div>
+  </body>
+</html>
